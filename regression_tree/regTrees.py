@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import math
 
 def loadDataSet(fileName):
     fr = open(fileName).readlines()
@@ -72,5 +73,48 @@ def createTree(dataSet,leafType = regLeaf, errType = regErr, ops = (1,4)):
     retTree["right"] = createTree(data1,leafType,errType,ops)
     return retTree
 
+#####################回归树剪枝函数###############################
+# 判断是否是子树
+def isTree(obj):
+    return type(obj).__name__ == 'dict'
 
+#如果是树则递归找左子树和右子树的平均值
+def getMean(tree):
+    if isTree(tree['right']):
+        tree['right'] = getMean(tree['right'])
+    if isTree(tree['left']):
+        tree['left'] = getMean(tree['left'])
+    return (tree['left']+tree['right'])/2
 
+'''
+输入树和测试数据
+基于已有的树切分测试数据：
+    如果存在任一子集是一棵树，则在该子集递归剪枝过程
+    计算将当前两个叶节点合并后的误差
+    计算不合并的误差
+    如果合并会降低误差的话，就将叶节点合并'''
+def prune(tree, testData):
+    # 如果没有测试数据则对树进行塌陷处理
+    if testData.shape[0] ==0:
+        return getMean(tree)
+    # 如果子集仍是树则递归分数据，递归后剪枝
+    if isTree(tree['left']) or isTree(tree['right']):
+        lSet, rSet = binSplitDataSet(testData,tree['feat'],tree['val'])
+    if isTree(tree['left']):
+        tree['left'] = prune(tree['left'],lSet)
+    if isTree(tree['right']):
+        tree['right'] = prune(tree['right'],rSet)
+    if not isTree(tree['left']) and not isTree(tree['right']):
+        lSet, rSet = binSplitDataSet(testData,tree['feat'],tree['val'])
+        errnomerge = np.sum([temp**2 for temp in lSet[:,-1]-tree['left']]) + np.sum([temp**2 for temp in rSet[:,-1]-tree['right']])
+        treemean = (tree['left']+tree['right'])/2
+        errmerge = np.sum([temp**2 for temp in testData[:,-1]-treemean])
+        # errmerge = np.sum(math.pow(testData[:,-1]-treemean,2))
+        if errmerge<errnomerge:
+            print('merge')
+            return treemean
+        else:
+            return tree
+    else:
+        return tree
+# 可以减去大量节点但是效果仍不够好
