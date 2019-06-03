@@ -52,4 +52,37 @@ def kMeans(dataMat,k,distMeas=distEclud,createCent = randCent): #distMeas表示�
             index = dataMat[np.nonzero(clusteAssment[:,0]==c)[0]]
             centroids[c,:] = np.mean(index,axis=0)
     return centroids,clusteAssment
+#返回每个值的质心和方差
 
+def biKmeans(dataMat,k,distMeas=distEclud):#distMeas表示距离计算函数
+    m,n = dataMat.shape
+    clusteAssment = np.mat(np.zeros((m,2))) #存储每个点的簇分配结果:簇索引，误差
+    centroid0 = np.mean(dataMat,axis = 0).tolist()[0] #初始簇质心
+    centList = [centroid0] #聚类中心
+    for i in range(m):
+        clusteAssment[i,1] = distEclud(dataMat[i,:],centroid0) ** 2
+
+    while len(centList) < k:
+        lowestSSE = np.inf
+
+        for i in range(len(centList)): #尝试划分每一个簇
+            ptsInCurrCluster = dataMat[np.nonzero(clusteAssment[:,0] == i)[0],:]#在第i簇的点
+            centroids, splitClustAss = kMeans(ptsInCurrCluster,2) #分2簇
+            sseSplit = np.sum(splitClustAss[:,1],axis = 0)
+            sseNotSplit = np.sum(clusteAssment[np.nonzero(clusteAssment[:,0] != i)[0],1],axis = 0)
+            # print(sseSplit,sseNotSplit,sseSplit+sseNotSplit)
+
+            if (sseSplit+sseNotSplit) < lowestSSE:
+                bestCentToSplit = i #聚类误差最小的簇
+                bestCentroid = centroids #2聚类的聚类中心
+                bestClusterAss = splitClustAss.copy() #存储每个点的簇分配结果:簇索引，误差
+                lowestSSE = sseSplit + sseNotSplit
+
+        #更新簇分配结果
+        # 还是不怎么能看得懂
+        bestClusterAss[np.nonzero(bestClusterAss[:,0] == 1)[0],0] = len(centList)
+        bestClusterAss[np.nonzero(bestClusterAss[:,0] == 0)[0], 0] = bestCentToSplit
+        centList[bestCentToSplit] = bestCentroid[0,:].tolist()[0]
+        centList.append(bestCentroid[1,:].tolist()[0])
+        clusteAssment[np.nonzero(clusteAssment[:,0] == bestCentToSplit)[0],:] = bestClusterAss
+    return centList,clusteAssment
