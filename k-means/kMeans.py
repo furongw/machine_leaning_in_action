@@ -80,9 +80,9 @@ def biKmeans(dataMat,k,distMeas=distEclud):#distMeas表示距离计算函数
 
         #更新簇分配结果
         # 还是不怎么能看得懂
-        bestClusterAss[np.nonzero(bestClusterAss[:,0] == 1)[0],0] = len(centList)
+        bestClusterAss[np.nonzero(bestClusterAss[:,0] == 1)[0],0] = len(centList) # 替换最佳二分簇的实际质心标签，这个新的质心的标签要注意
         bestClusterAss[np.nonzero(bestClusterAss[:,0] == 0)[0], 0] = bestCentToSplit
-        centList[bestCentToSplit] = bestCentroid[0,:].tolist()[0]
-        centList.append(bestCentroid[1,:].tolist()[0])
-        clusteAssment[np.nonzero(clusteAssment[:,0] == bestCentToSplit)[0],:] = bestClusterAss
+        centList[bestCentToSplit] = bestCentroid[0,:].tolist()[0] # 更新最佳二分簇的一个质心
+        centList.append(bestCentroid[1,:].tolist()[0]) # 更新最佳二分簇的另一个质心
+        clusteAssment[np.nonzero(clusteAssment[:,0] == bestCentToSplit)[0],:] = bestClusterAss # 将原簇结果用新二分簇表示
     return centList,clusteAssment
