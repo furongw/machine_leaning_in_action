@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75354a53-daf6-463d-a23b-299315655d55" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Apriori/apriori.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/k-means/kMeans.py" beforeDir="false" afterPath="$PROJECT_DIR$/k-means/kMeans.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,24 +17,8 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/k-means/kMeans.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="82" column="16" selection-start-line="82" selection-start-column="16" selection-end-line="82" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/k-means/a.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/Apriori/apriori.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -87,10 +71,11 @@
         <option value="$PROJECT_DIR$/k-means/k_means.md" />
         <option value="$PROJECT_DIR$/k-means/a.py" />
         <option value="$PROJECT_DIR$/k-means/kMeans.py" />
+        <option value="$PROJECT_DIR$/Apriori/apriori.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="402" />
     <option name="y" value="9" />
     <option name="width" value="981" />
@@ -423,12 +408,12 @@
       <workItem from="1559564108626" duration="3129000" />
       <workItem from="1559567320736" duration="3495000" />
       <workItem from="1559651812935" duration="849000" />
-      <workItem from="1559652710914" duration="1561000" />
+      <workItem from="1559652710914" duration="1693000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="176234000" />
+    <option name="totallyTimeSpent" value="176366000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -441,15 +426,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49079755" visible="true" weight="0.20647773" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49079755" visible="true" weight="0.2097166" />
       <window_info id="Structure" order="1" sideWeight="0.5092025" side_tool="true" weight="0.1659919" />
       <window_info id="Favorites" order="2" sideWeight="0.5092025" side_tool="true" weight="0.1659919" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.20499109" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49716598" visible="true" weight="0.3137255" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.16934046" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49716598" weight="0.3137255" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.23487544" />
@@ -834,20 +818,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/k-means/a.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/k-means/kMeans.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
           <caret line="82" column="16" selection-start-line="82" selection-start-column="16" selection-end-line="82" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/k-means/a.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
