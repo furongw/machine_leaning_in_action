@@ -36,7 +36,7 @@ def scanD(D,Ck,minSupport):#D为数据集的集合，Ck为候选集，minSupport
 
 def aprioriGen(Lk,k):
     ##Lk为频繁项，k为项集元素个数
-    #如输入{0},{1},{2}返回{0，1}，{1，2}，{0，2}
+    #如输入{0},{1},{2},k=2,返回{0，1}，{1，2}，{0，2}
     retlist = []
     for i in range(len(Lk)-1):
         for j in range(i+1,len(Lk)):  # 前k-2个项相同时，将两个集合合并
@@ -64,9 +64,41 @@ def apriori(dataSet,minSupport = 0.5):
         k += 1
 
     return L,supportData
+# 返回按元素个数升序排列的频繁项集列表和包含这些频繁项集支持数据的字典
 
 ########################从频繁项集中挖掘关联规则########################
+# generateRules三个参数：频繁项集列表，包含那些频繁项集支持数据的字典、最小可信度阈值。
+# 该函数遍历L中的每一个频繁项集并对每个频繁项集创建只包含单个元素集合的列表H1.因为无法从单元素项集中构建关联规则，所以从单元素项集中构建关联规则。
 
+def generateRules(L,supportData,minConf = 0.7):
+    bigRuleList = []
+    for i in range(1,len(L)):
+        for freqSet in L[i]:
+            H1 = [frozenset([item]) for item in freqSet] #对每个频繁项集，创建只包含单个元素的列表
+            if i > 1:#频繁项集元素超过2，进行合并
+                rulesFromConseq(freqSet,H1,supportData,bigRuleList,minConf)
+            else:#频繁项集元素为2，直接计算可信度
+                calcConf(freqSet,H1,supportData,bigRuleList,minConf)
+    return bigRuleList
+
+def calcConf(freqSet,H,supportData,bigRuleList,minConf):#计算置信度
+    prunedH = []
+    for conseq in H:
+        conf = supportData[freqSet]/supportData[freqSet-conseq]
+        if conf >= minConf:
+            print(freqSet-conseq,"-->",conseq,"   conf:",conf)
+            bigRuleList.append((freqSet-conseq,conseq,conf))
+            prunedH.append(conseq)
+    return prunedH
+
+def rulesFromConseq(freqSet,H,supportData,bigRuleList,minConf): #合并
+    #H表示出现在规则右部的元素列表
+    m = len(H[0])
+    if len(freqSet) > (m+1):
+        Hmp1 = aprioriGen(H,m+1) #创建规则右边长度为(m+1)的候选项
+        Hmp1 = calcConf(freqSet,Hmp1,supportData,bigRuleList,minConf)
+        if len(Hmp1) > 1: #如果不止一条规则满足, 则尝试进一步合并规则右边
+            rulesFromConseq(freqSet, Hmp1, supportData, bigRuleList, minConf)
 
 
 
@@ -80,9 +112,15 @@ def apriori(dataSet,minSupport = 0.5):
 
 if  __name__ == '__main__':
     dataSet = loadDataSet()
+    # print(dataSet)
     C1 = createC1(dataSet)
     # print(set(C1))
     D = list(map(set, dataSet))
     L1, suppData0 = scanD(D, C1, 0.5)
     L,suppData = apriori(dataSet,0.7)
-    print(L)
+    # print(L,suppData)
+    L,suppData = apriori(dataSet,minSupport=0.5)
+    rules = generateRules(L,suppData,minConf=0.7)
+    print(rules)
+
+
