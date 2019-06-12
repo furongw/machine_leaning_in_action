@@ -80,6 +80,51 @@ def createInitSet(dataSet):
     return retDict
 
 
+###################发现以给定元素项结尾的所有路径的函数#################################################
+##抽取条件模式基
+def ascendTrees(leafNode,prefixPath):#迭代上溯FP树 leafNode表示与元素关联的头指针表，prefixPath存放上溯过程中遇到的节点
+    if leafNode.parent != None:
+        prefixPath.append(leafNode.name)
+        ascendTrees(leafNode.parent,prefixPath)
+
+def findPrefixPath(basePat,treeNode):#找到以元素basePat结尾的所有前缀路径，treeNode表示与元素basePat关联的头指针表
+    condPats = {}
+    while treeNode != None:
+        prefixPath = []
+        ascendTrees(treeNode,prefixPath)
+        if len(prefixPath) > 1:
+            condPats[frozenset(prefixPath[1:])] = treeNode.count
+        treeNode = treeNode.nodeLink   # 根据头指针表访问下一个元素
+    return condPats
+
+
+############递归查找频繁项集的minTree函数##############
+def mineTree(inTree,headerTable,minSup,preFix,freqItemList):
+    '''
+
+    :param inTree:
+    :param headerTable:
+    :param minSup:
+    :param preFix:
+    :param freqItemList:
+    :return:
+    首先对头指针中的元素按照其出现频率进行排序。然后将每一个频繁项添加到频繁项集列表中。接下来递归调用findPrefixPath来创建条件基
+    该条件基被当成一个新数据集输送给createTree。如果书中有元素项的话，递归调用mineTree
+    '''
+    bigL = [v[0] for v in sorted(headerTable.items(),key=lambda  x:x[1][0])] #从头指针表的底端开始，从小到大排序
+    for basePat in bigL:
+        newFreqSet = preFix.copy()
+        newFreqSet.add(basePat)
+        freqItemList.append(newFreqSet)
+        condPattBases = findPrefixPath(basePat,headerTable[basePat][1]) #前缀路径
+        myCondtree,myHead = createTree(condPattBases,minSup) #FP条件树
+
+        if myHead != None:
+            myCondtree.disp(1)
+            mineTree(myCondtree,myHead,minSup,newFreqSet,freqItemList)
+
+
+
 
 
 
@@ -88,9 +133,13 @@ if __name__ =='__main__':
     # rootnode.children['eye'] = treeNode('eye',13,None)
     # rootnode.disp()
     simpDat = loadSimpDat()
-    print(simpDat)
+    # print(simpDat)
     iniSet = createInitSet(simpDat)
-    print(iniSet)
+    # print(iniSet)
     myFPtree, myHeaderTab = createTree(iniSet,3)
-    myFPtree.disp()
-
+    # myFPtree.disp()
+    # print(findPrefixPath('x',myHeaderTab['x'][1]))
+    # print(findPrefixPath('r', myHeaderTab['r'][1]))
+    freqItems = []
+    mineTree(myFPtree,myHeaderTab,3,set([]),freqItems)
+    print("freqItem:", freqItems)
