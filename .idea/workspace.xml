@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75354a53-daf6-463d-a23b-299315655d55" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/FP-growth/fpGrowth.md" beforeDir="false" afterPath="$PROJECT_DIR$/FP-growth/fpGrowth.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FP-growth/fpGrowth.py" beforeDir="false" afterPath="$PROJECT_DIR$/FP-growth/fpGrowth.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PCA/iris.data.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PCA/pca.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PCA/testSet.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PCA/testSet3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,31 +20,13 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/FP-growth/fpGrowth.py">
+        <entry file="file://$PROJECT_DIR$/PCA/pca.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="144" column="33" lean-forward="true" selection-start-line="144" selection-start-column="33" selection-end-line="144" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FP-growth/fpGrowth.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="286">
-                <caret line="42" selection-start-line="42" selection-end-line="42" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Desktop/学习资料/机器学习与深度学习/机器学习实战（中文版+英文版+源代码）/机器学习实战源代码/machinelearninginaction/Ch12/fpGrowth.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-248">
-              <caret line="116" column="18" lean-forward="true" selection-start-line="116" selection-start-column="18" selection-end-line="116" selection-end-column="18" />
+            <state relative-caret-position="198">
+              <caret line="37" column="14" lean-forward="true" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -104,10 +89,12 @@
         <option value="$PROJECT_DIR$/FP-growth/try.py" />
         <option value="$USER_HOME$/Desktop/学习资料/机器学习与深度学习/机器学习实战（中文版+英文版+源代码）/机器学习实战源代码/machinelearninginaction/Ch12/fpGrowth.py" />
         <option value="$PROJECT_DIR$/FP-growth/fpGrowth.py" />
+        <option value="$PROJECT_DIR$/PCA.py" />
+        <option value="$PROJECT_DIR$/PCA/pca.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="402" />
     <option name="y" value="9" />
     <option name="width" value="981" />
@@ -129,7 +116,7 @@
             <path>
               <item name="machine learning in action" type="b2602c69:ProjectViewProjectNode" />
               <item name="machine learning in action" type="462c0819:PsiDirectoryNode" />
-              <item name="FP-growth" type="462c0819:PsiDirectoryNode" />
+              <item name="PCA" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -141,7 +128,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/k-means" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/PCA" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -150,15 +137,15 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\付蓉\PycharmProjects\machine learning in action\knn" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\付蓉\PycharmProjects\machine learning in action\PCA" />
       <recent name="C:\Users\付蓉\PycharmProjects\machine learning in action\k-means" />
       <recent name="C:\Users\付蓉\PycharmProjects\machine learning in action\regression_tree" />
       <recent name="C:\Users\付蓉\PycharmProjects\machine learning in action\regression" />
       <recent name="C:\Users\付蓉\PycharmProjects\machine learning in action\AdaBoost" />
-      <recent name="C:\Users\付蓉\PycharmProjects\machine learning in action\support_vector_machine" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\付蓉\PycharmProjects\machine learning in action\knn" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -173,7 +160,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.fpGrowth">
+  <component name="RunManager" selected="Python.pca">
     <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="machine learning in action" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -218,28 +205,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="a (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="machine learning in action" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Apriori" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Apriori/a.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="apriori" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="machine learning in action" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -266,6 +231,9 @@
       <module name="machine learning in action" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="D:\anaconda\python.exe" />
       <option name="WORKING_DIRECTORY" value="$USER_HOME$/Desktop/学习资料/机器学习与深度学习/机器学习实战（中文版+英文版+源代码）/机器学习实战源代码/machinelearninginaction/Ch12" />
       <option name="IS_MODULE_SDK" value="false" />
@@ -303,10 +271,32 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="pca" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="machine learning in action" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PCA" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PCA/pca.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="try" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="machine learning in action" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/FP-growth" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -344,19 +334,19 @@
     <list>
       <item itemvalue="Pyramid server.Unnamed" />
       <item itemvalue="Python.Unnamed" />
-      <item itemvalue="Python.a (1)" />
       <item itemvalue="Python.apriori" />
       <item itemvalue="Python.fpGrowth" />
       <item itemvalue="Python.try" />
       <item itemvalue="Python.fpGrowth (1)" />
+      <item itemvalue="Python.pca" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.pca" />
         <item itemvalue="Python.fpGrowth" />
         <item itemvalue="Python.fpGrowth (1)" />
         <item itemvalue="Python.try" />
         <item itemvalue="Python.apriori" />
-        <item itemvalue="Python.a (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -444,11 +434,13 @@
       <workItem from="1560168874003" duration="6101000" />
       <workItem from="1560258160405" duration="3714000" />
       <workItem from="1560343188395" duration="4889000" />
+      <workItem from="1560395342207" duration="22000" />
+      <workItem from="1560429657497" duration="3486000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="199552000" />
+    <option name="totallyTimeSpent" value="203060000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -463,12 +455,12 @@
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49079755" visible="true" weight="0.23724696" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49079755" visible="true" weight="0.24534413" />
       <window_info id="Structure" order="1" sideWeight="0.5092025" side_tool="true" weight="0.1659919" />
       <window_info id="Favorites" order="2" sideWeight="0.5092025" side_tool="true" weight="0.1659919" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.31907308" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.31907308" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49716598" weight="0.3137255" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -478,12 +470,12 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50364375" side_tool="true" weight="0.34046346" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32798573" />
-      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49635628" weight="0.053475935" />
+      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49635628" weight="0.43850267" />
       <window_info anchor="bottom" id="Jupyter" order="13" visible="true" weight="0.3291815" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" weight="0.29554656" />
+      <window_info active="true" anchor="right" id="SciView" order="3" visible="true" weight="0.29554656" />
       <window_info anchor="right" x="0" y="0" width="273" height="495" id="Documentation" order="4" side_tool="true" weight="0.32955465" />
       <window_info anchor="right" id="Database" order="5" />
     </layout>
@@ -571,32 +563,20 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/machine_learning_in_action$apriori.coverage" NAME="apriori Coverage Results" MODIFIED="1560171166229" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Apriori" />
-    <SUITE FILE_PATH="coverage/machine_learning_in_action$try.coverage" NAME="try Coverage Results" MODIFIED="1560345292661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FP-growth" />
-    <SUITE FILE_PATH="coverage/machine_learning_in_action$a__2_.coverage" NAME="a (2) Coverage Results" MODIFIED="1559460164488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/regression_tree" />
     <SUITE FILE_PATH="coverage/machine_learning_in_action$Regression.coverage" NAME="Regression Coverage Results" MODIFIED="1557366759550" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/regression" />
-    <SUITE FILE_PATH="coverage/machine_learning_in_action$fpGrowth.coverage" NAME="fpGrowth Coverage Results" MODIFIED="1560347486709" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FP-growth" />
-    <SUITE FILE_PATH="coverage/machine_learning_in_action$a__1_.coverage" NAME="a (1) Coverage Results" MODIFIED="1559742680778" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Apriori" />
+    <SUITE FILE_PATH="coverage/machine_learning_in_action$pca.coverage" NAME="pca Coverage Results" MODIFIED="1560434027385" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PCA" />
     <SUITE FILE_PATH="coverage/machine_learning_in_action$example_wr.coverage" NAME="example_wr Coverage Results" MODIFIED="1554206932719" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/knn" />
     <SUITE FILE_PATH="coverage/machine_learning_in_action$a__4_.coverage" NAME="a (4) Coverage Results" MODIFIED="1559654549340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/k-means" />
     <SUITE FILE_PATH="coverage/machine_learning_in_action$fpGrowth__1_.coverage" NAME="fpGrowth (1) Coverage Results" MODIFIED="1560347238487" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Desktop/学习资料/机器学习与深度学习/机器学习实战（中文版+英文版+源代码）/机器学习实战源代码/machinelearninginaction/Ch12" />
-    <SUITE FILE_PATH="coverage/machine_learning_in_action$a.coverage" NAME="a Coverage Results" MODIFIED="1557060718613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AdaBoost" />
     <SUITE FILE_PATH="coverage/machine_learning_in_action$logRegres.coverage" NAME="logRegres Coverage Results" MODIFIED="1555404871034" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Logisitic_regression" />
     <SUITE FILE_PATH="coverage/machine_learning_in_action$a__3_.coverage" NAME="a (3) Coverage Results" MODIFIED="1557315012658" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/regression" />
+    <SUITE FILE_PATH="coverage/machine_learning_in_action$try.coverage" NAME="try Coverage Results" MODIFIED="1560345292661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FP-growth" />
+    <SUITE FILE_PATH="coverage/machine_learning_in_action$a__2_.coverage" NAME="a (2) Coverage Results" MODIFIED="1559460164488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/regression_tree" />
+    <SUITE FILE_PATH="coverage/machine_learning_in_action$fpGrowth.coverage" NAME="fpGrowth Coverage Results" MODIFIED="1560347486709" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FP-growth" />
+    <SUITE FILE_PATH="coverage/machine_learning_in_action$a__1_.coverage" NAME="a (1) Coverage Results" MODIFIED="1559742680778" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Apriori" />
+    <SUITE FILE_PATH="coverage/machine_learning_in_action$a.coverage" NAME="a Coverage Results" MODIFIED="1557060718613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AdaBoost" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/knn/testDigits/1_3.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/knn/testDigits/1_30.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/学习资料/机器学习与深度学习/机器学习实战（中文版+英文版+源代码）/机器学习实战源代码/machinelearninginaction/Ch05/logRegres.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="32" selection-start-line="32" selection-end-line="52" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/anaconda/Lib/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -608,13 +588,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="99">
           <caret line="202" selection-start-line="202" selection-end-line="202" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Logisitic_regression/testSet.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -777,16 +750,6 @@
     <entry file="file://$PROJECT_DIR$/regression_tree/ex2.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Logisitic_regression/logRegres.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="118" selection-start-line="118" selection-end-line="118" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/support_vector_machine/svmMLiA.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
@@ -903,17 +866,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FP-growth/try.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="119" column="13" selection-start-line="119" selection-start-column="13" selection-end-line="119" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/FP-growth/try.py" />
     <entry file="file://$PROJECT_DIR$/FP-growth/fpGrowth.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="286">
+          <first_editor relative-caret-position="840">
             <caret line="42" selection-start-line="42" selection-end-line="42" />
           </first_editor>
           <second_editor />
@@ -922,15 +879,48 @@
     </entry>
     <entry file="file://$USER_HOME$/Desktop/学习资料/机器学习与深度学习/机器学习实战（中文版+英文版+源代码）/机器学习实战源代码/machinelearninginaction/Ch12/fpGrowth.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-248">
-          <caret line="116" column="18" lean-forward="true" selection-start-line="116" selection-start-column="18" selection-end-line="116" selection-end-column="18" />
+        <state relative-caret-position="2320">
+          <caret line="116" column="18" selection-start-line="116" selection-start-column="18" selection-end-line="116" selection-end-column="18" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/PCA.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/FP-growth/fpGrowth.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="144" column="33" lean-forward="true" selection-start-line="144" selection-start-column="33" selection-end-line="144" selection-end-column="33" />
+        <state relative-caret-position="392">
+          <caret line="144" column="33" selection-start-line="144" selection-start-column="33" selection-end-line="144" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logisitic_regression/testSet.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logisitic_regression/logRegres.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="118" selection-start-line="118" selection-end-line="118" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PCA/iris.data.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PCA/pca.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="37" column="14" lean-forward="true" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
