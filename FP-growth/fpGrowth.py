@@ -64,12 +64,8 @@ def updateHeader(nodeOri,targetNode): ##更新头指针表
 
 ###################一个简单数据集及数据包装器###################
 def loadSimpDat():
-    simpDat = [['r', 'z', 'h', 'j', 'p'],
-               ['z', 'y', 'x', 'w', 'v', 'u', 't', 's'],
-               ['z'],
-               ['r', 'x', 'n', 'o', 's'],
-               ['y', 'r', 'x', 'z', 'q', 't', 'p'],
-               ['y', 'z', 'x', 'e', 'q', 's', 't', 'm']]
+    simpDat = [['a','b','c'],
+                    ['a','b','d'],['c','d','b']]
     return simpDat
 
 ##将数据集从列表转换为字典

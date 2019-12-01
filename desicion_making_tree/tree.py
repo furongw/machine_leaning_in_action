@@ -75,11 +75,11 @@ def createTree(dataset, labels):
     #找出分树的最好特征，并对于该特征的取值进行递归分树
     bestfeat = chooseBestFeatureToSplit(dataset)
     bestfeatlabel = labels[bestfeat]
-    tree = {bestfeatlabel:{}}
-    del labels[bestfeat]
+    labelcopy = labels.copy()
+    del labelcopy[bestfeat]
     uniques = set(example[bestfeat] for example in dataset)
     for value in uniques:
-        sublabel = labels
+        sublabel = labelcopy
         tree[bestfeatlabel][value] = createTree(splitDataSet(dataset,bestfeat,value), sublabel)
     return tree
 
